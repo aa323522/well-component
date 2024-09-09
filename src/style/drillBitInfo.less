@@ -1,0 +1,109 @@
+@import '../style/Theme.less';
+.drillBitInfo {
+  position: relative;
+
+  .info-large {
+    height: calc(100% - 130px);
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    .info-box {
+      .title {
+        height: 40px;
+        background: @color061E3B;
+        border-top: 1px solid rgba(31, 198, 255, 0.5);
+        padding: 0 14px;
+        font-size: 20px;
+        font-family: Inter-Regular, Inter;
+        font-weight: 400;
+        color: @text-color;
+      }
+
+      .drill-bit-menu {
+        img {
+          display: inline-block;
+          height: 20px;
+          width: 20px;
+        }
+      }
+
+      .info-content {
+        padding: 10px 14px;
+        font-size: 16px;
+        font-family: Inter-Regular, Inter;
+        color: @text-color;
+
+        h3 {
+          font-size: 18px;
+          color: @text-color;
+        }
+
+        .info {
+          margin-top: 14px;
+        }
+
+        .number-box {
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 16px;
+
+          .number-box-item {
+            height: 90px;
+            width: 48%;
+            background: @color07284E;
+            border: 1px solid @color5DB0FC;
+            padding: 7px;
+            font-size: 16px;
+            color: @text-color;
+            margin-bottom: 8px;
+
+            .number {
+              font-size: 27px;
+              color: @color76FF36;
+            }
+
+            .warn-number {
+              font-size: 27px;
+              color: @colorC50B0B;
+            }
+          }
+
+          .number-box-item:nth-child(2n+1) {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .info-large::-webkit-scrollbar {
+    display: none;
+  }
+
+  .current {
+    padding: 0 16px;
+
+    .current-info {
+      position: absolute;
+      bottom: 10px;
+      height: 120px;
+      width: calc(100% - 32px);
+      background: @color07284E;
+      border: 1px solid @color5DB0FC;
+      font-size: 20px;
+      color: @text-color;
+
+      .title {
+        margin: 17px 0;
+        font-size: 20px;
+      }
+
+      .result {
+        background: url("../assets/active-title.png") no-repeat;
+        background-size: 176px 40px;
+        background-position: center center;
+      }
+    }
+  }
+}

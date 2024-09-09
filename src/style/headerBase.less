@@ -1,0 +1,75 @@
+@import "../style/Theme.less";
+
+.headerBase {
+  position: absolute;
+  height: 58px;
+  width: 100%;
+  margin-top: 6px;
+
+  .nav-icon {
+    margin-left: 107px;
+    margin-right: 150px;
+    font-size: 26px;
+    font-family: Source Han Sans CN-Medium, Source Han Sans CN;
+    font-weight: 500;
+    color: @text-color;
+    white-space: nowrap;
+
+    img {
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      margin-right: 12px;
+    }
+  }
+
+  .nav-title-box {
+    .nav-title {
+      background: url(../assets/title.png) no-repeat;
+      height: 40px;
+      line-height: 40px;
+      width: 182px;
+      font-size: 20px;
+      text-align: center;
+      color: @text-color;
+      margin-right: 16px;
+    }
+
+    .active-icon {
+      display: none;
+    }
+
+    .active-nav-title {
+      width: 178px;
+      margin-right: 16px;
+      background: url(../assets/active-title.png) no-repeat;
+
+      .active-icon {
+        display: block;
+        height: 24px;
+        width: 24px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .search-overall {
+    margin-left: 198px;
+
+    img {
+      display: inline-block;
+      height: 25px;
+      width: 25px;
+      margin-top: 8px;
+    }
+
+    .el-input__inner {
+      width: 280px;
+      height: 40px;
+      background: @color0A456D;
+      border: 1px solid @color0A456D;
+      border-top: 1px solid @color1FC6FF;
+      color: @text-color;
+    }
+  }
+}

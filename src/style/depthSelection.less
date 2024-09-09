@@ -1,0 +1,26 @@
+@import "../style/Theme.less";
+
+.depthSelection {
+  min-width: 4rem;
+
+  .sliderHeight {
+    height: calc(100% - 5.75rem);
+    padding-top: 3rem;
+  }
+
+  .ant-slider-dot {
+    display: none;
+  }
+
+  .ant-slider-mark-text {
+    color: @text-color !important;
+    white-space: pre !important;
+  }
+
+  .ant-slider-vertical {
+    .ant-slider-mark {
+      width: 80px;
+      top: -40px;
+    }
+  }
+}

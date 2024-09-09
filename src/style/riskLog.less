@@ -1,0 +1,76 @@
+@import '../style/Theme.less';
+
+.riskLog {
+  height: 100%;
+  .table-header {
+    background: @color375B91;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+    font-weight: 400;
+    color: @text-color;
+
+    div {
+      width: 120px;
+    }
+
+    div:last-child {
+      padding-left: 8px;
+    }
+  }
+
+  .yl {
+    color: @colorC50B0B;
+  }
+
+  .kz {
+    color: @colorE0CA04;
+  }
+
+  .yl-kz {
+    color: @color7D3AFA;
+  }
+
+  .accurate {
+    color: @color76FF36;
+  }
+
+  .wrong {
+    color: @colorC50B0B;
+  }
+
+  .table-remarks {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin-right: 2px;
+  }
+
+  .el-table tr {
+    background-color: @color06224E;
+    color: @text-color;
+    cursor: pointer;
+  }
+
+  .el-table .el-table__header th {
+    background: @color375B91;
+  }
+
+  .el-table--enable-row-hover .el-table__body tr:hover>td.el-table__cell {
+    background-color: @color061E3B;
+  }
+
+  .el-table__empty-block {
+    background-color: @color06224E;
+  }
+
+  .el-table .cell {
+    font-size: 18px !important;
+  }
+
+  .el-table__header-wrapper {
+    position: sticky !important;
+    top: 0 !important;
+  }
+}

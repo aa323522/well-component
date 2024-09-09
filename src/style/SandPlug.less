@@ -1,0 +1,153 @@
+@import "../style/Theme.less";
+
+.SandPlug {
+
+  .real-time {
+    width: 10%;
+    min-width: 200px;
+  }
+
+  .time {
+    position: absolute;
+    left: 10px;
+    background-color: #000c37d9;
+    z-index: 100;
+
+    .time-item {
+      background: @color07284E;
+      border: 1px solid @color5DB0FC;
+      font-size: 22px;
+      color: @text-color;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4px 8px;
+
+      .number {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .work {
+    .work-box {
+      background-color: @color06224E;
+      margin: 12px;
+      border: 1px solid @color5DB0FC;
+      padding: 8px;
+    }
+
+    .alarm-img {
+      display: inline-block;
+      height: 58px;
+      width: 58px;
+    }
+
+    .unAlarm {
+      filter: brightness(150%) contrast(52%) hue-rotate(134deg) saturate(0%);
+    }
+
+    .param-title {
+      font-size: 18px;
+      color: @colorF5;
+
+      .count {
+        font-size: 20px;
+        color: @colorC50B0B;
+        width: 60px;
+        background: inherit;
+        border-color: inherit;
+
+        .ant-input-number-handler-wrap {
+          display: none;
+        }
+      }
+    }
+
+    h2 {
+      color: @text-color;
+      text-align: center;
+    }
+
+    .color-hight {
+      color: @colorC50B0B;
+    }
+
+    .opt-btn {
+      height: 40px;
+      background: @color061E3B !important;
+      border: 1px solid @color061E3B !important;
+      padding: 0 14px;
+      font-size: 20px;
+      font-family: Inter-Regular, Inter;
+      font-weight: 400;
+      color: @color76FF36;
+    }
+
+    .opt-btn.is-disabled {
+      background: #5656564b !important;
+      border: 1px solid #5656564b !important;
+    }
+
+    .wrong {
+      color: @colorC50B0B;
+    }
+
+  }
+
+  .log {
+    overflow-y: auto;
+
+    .export-btn {
+      margin-right: 18px;
+      margin-top: 2px;
+    }
+
+    img {
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+      cursor: pointer;
+    }
+
+    .log-box-full {
+      height: 100%;
+    }
+
+    .log-box {
+      height: calc(100% - 40px);
+    }
+
+  }
+
+  .title {
+    height: 40px;
+    background: @color061E3B;
+    border-top: 1px solid rgba(31, 198, 255, 0.5);
+    padding: 0 14px;
+    font-size: 20px;
+    font-family: Inter-Regular, Inter;
+    font-weight: 400;
+    color: @text-color;
+  }
+
+  .drill-bit-menu {
+    img {
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+    }
+  }
+
+  .ant-spin-container {
+    height: 100%;
+  }
+
+  .ant-spin-nested-loading {
+    height: 100%;
+  }
+}
+
+.ant-spin-nested-loading>div>.ant-spin {
+  max-height: unset !important;
+}

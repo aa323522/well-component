@@ -1,0 +1,139 @@
+@import "./Theme.less";
+
+.ant-checkbox-wrapper {
+  color: @text-color !important;
+}
+
+.ant-checkbox {
+  margin-right: 0.5rem !important;
+}
+
+.ant-checkbox-wrapper,
+.ant-checkbox-disabled,
+.ant-checkbox-disabled + span {
+  color: @text-color !important;
+}
+
+.ant-checkbox-inner {
+  background-color: @color09366C !important;
+  border-color: @color0094FF !important;
+}
+
+.ant-checkbox-wrapper-checked {
+  .ant-checkbox-inner {
+    background-color: @color0094FF !important;
+    border-color: @color0094FF !important;
+  }
+}
+
+.ant-modal-content {
+  color: @text-color!important;
+  background: @commonBgDeep !important;
+  .ant-modal-close-icon {
+    color: @text-color!important;
+  }
+  .ant-modal-header {
+    background: @commonBgDeep!important;
+    color: @text-color!important;
+    border-bottom: 1px solid @splitColor!important;
+
+    .ant-modal-title {
+      color: @text-color!important;
+    }
+  }
+
+  .ant-modal-footer {
+    border-top: 1px solid @splitColor!important;
+  }
+}
+
+.ant-popover-content {
+  color: @text-color!important;
+  background: @commonBgDeep !important;
+  .ant-popover-inner {
+    color: @text-color!important;
+    background: @commonBgDeep !important;
+
+    .ant-popover-inner-content {
+      color: @text-color!important;
+
+      .ant-form {
+        label {
+          color: @text-color!important;
+        }
+
+        .ant-input {
+          color: @text-color!important;
+        }
+      }
+    }
+  }
+}
+
+.el-input__inner {
+  background: linear-gradient(
+    180deg,
+    #091c41 0%,
+    rgba(11, 66, 85, 0.99) 100%
+  ) !important;
+  border: 1px solid @color1FC6FF !important;
+  border-bottom: 1px solid @color10427D !important;
+  border-left: 1px solid @color10427D !important;
+  border-right: 1px solid @color10427D !important;
+  color: @text-color !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+}
+.el-input__inner::placeholder {
+  opacity: 0.85 !important;
+}
+
+.el-table {
+  background-color: #061e3b !important;
+}
+
+.el-table tr {
+  background-color: @color06224E !important;
+  color: @text-color !important;
+  cursor: pointer !important;
+}
+
+.el-table .el-table__header th {
+  background: @color375B91 !important;
+}
+
+.el-table--enable-row-hover .el-table__body tr:hover > td.el-table__cell {
+  background-color: @color061E3B !important;
+}
+
+.el-table__empty-block {
+  background-color: @color06224E !important;
+}
+
+.el-table .cell {
+  font-size: 18px !important;
+}
+
+.el-table__header-wrapper {
+  position: sticky !important;
+  top: 0 !important;
+}
+
+.ant-calendar-picker-input {
+  background: @commonBgDeep !important;
+}
+
+.ant-calendar-range-picker-input,
+.ant-calendar-range-picker-separator,
+.ant-progress-text {
+  color: @text-color !important;
+}
+
+.ant-calendar-picker-clear {
+  background: unset !important;
+
+  svg {
+    color: @text-color !important;
+  }
+}

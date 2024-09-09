@@ -1,0 +1,87 @@
+@import '../style/Theme.less';
+
+.drillVisualization {
+  min-width: 1800px;
+  min-height: 900px;
+  background-size: 100% 100%;
+
+  .menu-list {
+    width: 3rem;
+    background: linear-gradient(210deg, rgba(31, 198, 255, 0) 0%, #1fc6ff 100%);
+  }
+
+  .menu-item {
+    img {
+      display: inline-block;
+      height: 30px;
+      width: 30px;
+      margin: 13px 0;
+    }
+  }
+
+  .max-width70 {
+    max-width: 70%;
+  }
+
+  .width5 {
+    width: 5rem;
+  }
+
+  .width7 {
+    width: 7rem;
+  }
+
+  .width18 {
+    width: 18rem;
+  }
+
+  .drill-bit {
+    width: 22rem;
+  }
+
+  .wearBottom {
+    border-bottom: 2px solid rgb(10, 162, 250);
+    border-image: linear-gradient(90deg,
+        rgba(25, 162, 255, 0) 10%,
+        #00d0ff 50%,
+        rgba(25, 162, 255, 0) 90%) 2 2 2 2;
+  }
+
+  .level {
+    color: @text-color;
+    padding-top: 10.25rem;
+    font-size: 1.25rem;
+  }
+
+  .depthSelection {
+    .sliderHeight {
+      height: calc(100% - 5rem);
+      padding-top: 7rem;
+    }
+  }
+
+  .drillingRateHeader {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+
+  .actionBtn {
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+
+  .rateCheckbox {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .progressDashed {
+    .ant-progress-bg {
+      background: linear-gradient(to left, #000000 0%, #000000 50%, #fff 0%, #fff 50%) !important;
+      background-repeat: repeat-x !important;
+      background-size: 10px 10px !important;
+    }
+  }
+}

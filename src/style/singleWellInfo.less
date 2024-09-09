@@ -1,0 +1,100 @@
+@import '../style/Theme.less';
+.singleWellInfo{
+  .el-form-item{
+    margin:0;
+    margin-bottom: 20px;
+    .el-form-item__label{
+      font-size: 20px;
+      font-family: Source Han Sans CN-Regular, Source Han Sans CN;
+      font-weight: 400;
+      color: @text-color;
+      padding-right:25px;
+    }
+    .search-select{
+      width: 136px;
+    }
+  }
+  .el-form-item:last-child{
+    margin-bottom: 0;
+  }
+  .find-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0 5px;
+    height: 100px;
+    background: @color019B94;
+    font-size: 18px;
+    color: @text-color;
+    border-top: 1px solid @color019B94;
+    border-left: none;
+    border-right: 1px solid @color019B94;
+    border-bottom: 1px solid @color019B94;
+  }
+  .el-input__inner{
+    background: linear-gradient(180deg, #091C41 0%, rgba(11,66,85,0.99) 100%);
+    border: 1px solid @color1FC6FF;
+    border-bottom: 1px solid @color10427D;
+    border-left: 1px solid @color10427D;
+    border-right: 1px solid @color10427D;
+    color: @text-color;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .el-input__inner::placeholder{
+    opacity: 0.85;
+  }
+  .well-select{
+    background: linear-gradient(180deg, #0A2449 0%, #15488F 100%);
+    border:none;
+    .el-scrollbar {
+      .el-select-dropdown__list {
+        min-width: 128px;
+        max-height: 163px;
+        overflow: auto;
+      }
+      .el-select-dropdown__item{
+        font-size: 16px;
+      }
+      .el-select-dropdown__item.hover{
+        background: none;
+        color: @text-color;
+      }
+    }
+    .popper__arrow{
+      display: none!important;
+    }
+  }
+  .el-popper[x-placement^=bottom]{
+    margin-top: 2px!important;
+  }
+  .el-select > .el-select-dropdown {
+    transform: translateX(-5px);
+  }
+  .info{
+    font-size: 14px;
+    color:@color999;
+  }
+  .info-tab{
+    height: 38px;
+    padding:2px 0;
+    line-height: 38px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: @color061E3B;
+    color:@text-color;
+    font-size: 18px;
+    span{
+      display: inline-block;
+      width: 112px;
+      border-top:1px solid @color1FC6FF;
+    }
+  }
+  img{
+    display:inline-block;
+    height: 480px;
+    width: 286px;
+    margin:1rem 2rem;
+  }
+}

@@ -1,0 +1,49 @@
+@import '../style/Theme.less';
+.SandPlugRealTime{
+  .info-box {
+    .title {
+      height: 40px;
+      background: @color061E3B;
+      border-top: 1px solid rgba(31, 198, 255, 0.5);
+      padding: 0 14px;
+      font-size: 20px;
+      font-family: Inter-Regular, Inter;
+      font-weight: 400;
+      color: @text-color;
+    }
+
+    .drill-bit-menu {
+      img {
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+      }
+    }
+    .info-content{
+      height: calc(100vh - 140px);
+    }
+    .number-box-item {
+      flex: 1;
+      width: 90%;
+      background: @color07284E;
+      border: 1px solid @color5DB0FC;
+      font-size: 20px;
+      color: @text-color;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      .number {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 36px;
+        color: @text-color;
+      }
+    }
+    .number-box-item:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

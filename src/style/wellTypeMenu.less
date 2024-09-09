@@ -1,0 +1,59 @@
+.wellTypeMenu {
+  height: 100%;
+
+  .well-type {
+    height: 50px;
+    background: url("../assets/tab-title.png") no-repeat;
+    background-size: 230px 50px;
+    margin-bottom: 19px;
+    position: relative;
+
+    span {
+      width: 100px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      margin-left: 35px;
+    }
+  }
+
+  .arrow {
+    color: #669BFF;
+  }
+
+  .checkboxItem {
+    height: 590px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .checkboxItem::-webkit-scrollbar {
+    display: none;
+  }
+
+  .checkboxItem:hover::-webkit-scrollbar {
+    display: block;
+  }
+
+  .detail {
+    height: 40px;
+    line-height: 40px;
+    background: url("../assets/active-title.png") no-repeat;
+    background-size: 133px 40px;
+    background-position: center center;
+  }
+
+  .ant-checkbox-wrapper+.ant-checkbox-wrapper {
+    margin: 0;
+  }
+
+  .arrowDisable {
+    cursor: auto;
+  }
+
+  .ant-checkbox-group {
+    display: flex !important;
+  }
+}
